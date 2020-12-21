@@ -1,0 +1,42 @@
+html {
+  --primaryColor: #C93A39;
+  --textColor: #393939
+}
+.app-ul-list {
+  padding: 0;
+}
+.app-ul-list li {
+  list-style: none;
+  line-height: 2
+}
+
+.app-body {
+  padding: 16px;
+}
+
+h1 {
+  font-size: 38px !important;
+  font-weight: 200 !important;
+  color: var(--primaryColor)
+}
+
+.mt-6 {
+  margin-top: 88px;
+}
+
+.app-ul-list li::before {
+  content: " ";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  background-color: var(--primaryColor); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 12px; /* Also needed for space (tweak if needed) */
+  height: 12px;
+  border-radius: 50%;
+  vertical-align: center;
+  margin-right: 10px;
+}
+
+
+.paragraph {
+  font-size: 24px; font-weight: 200; line-height: 1.5
+}
